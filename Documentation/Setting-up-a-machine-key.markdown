@@ -41,3 +41,6 @@ To create the keys that go into the placeholders above, you can use one of the a
 * [http://www.betterbuilt.com/machinekey/](http://www.betterbuilt.com/machinekey/)
 * [http://www.codeproject.com/KB/aspnet/Machine_Key_Generator.aspx](http://www.codeproject.com/KB/aspnet/Machine_Key_Generator.aspx)
 * [http://www.developerfusion.com/tools/generatemachinekey/](http://www.developerfusion.com/tools/generatemachinekey/)
+
+Please be aware that using the above online tools to generate your machine key could be considered a security concern if you do not fully trust the above hosts, as they could theoretically store your private / public key pairs.  Furthermore because the above hosts are not using HTTPS, another party could also obtain your keys by monitoring your web traffic.  Knowlege of both keys could be used
+to compromise the security of your application.  It is very important to be careful NOT to share your MachineKey by accidently publishing your web.config file on the internet!
